@@ -829,7 +829,7 @@ function renderEditor(){
     });
     taw.appendChild(editor);p3.appendChild(taw);editorEl=editor;
     // 하단 버튼
-    const ft=mk('div',{className:'safe-bottom',style:{display:'flex',gap:'6px',padding:'7px 12px',paddingBottom:'calc(max(env(safe-area-inset-bottom,0px),20px) + 7px)',borderTop:BD,flexShrink:'0',alignItems:'center',background:'var(--bg)'}});
+    const ft=mk('div',{className:'safe-bottom',style:{display:'flex',gap:'6px',padding:'7px 12px 34px',borderTop:BD,flexShrink:'0',alignItems:'center',background:'var(--bg)'}});
     const ftL=mk('div',{style:{display:'flex',gap:'6px',flex:'1',flexWrap:'wrap'}});
     ftL.appendChild(mkBtn(`<i class="ti ti-layout-list" style="font-size:12px"></i> 웹소설 양식`,doFormat,{style:{background:'var(--cs)',color:'var(--ts)'}}));
     ftL.appendChild(mkBtn(`<i class="ti ti-device-floppy" style="font-size:12px"></i> 저장`,doSave,{id:'sbtn',style:{fontWeight:'500',border:S.dirty?'.5px solid var(--bi)':BD,background:S.dirty?'var(--ci)':'var(--cs)',color:S.dirty?'var(--ti)':'var(--tt)'}}));
